@@ -1,0 +1,9 @@
+<?php
+
+return [
+
+    'clientId'  =>  '',
+
+    'clientSecret'  =>  '',
+
+];

@@ -6,6 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.3.*",
+		"illuminate/html": "4.3.*",
 		"league/oauth2-client": "~0.3"
 	},
 	"require-dev": {

@@ -11,4 +11,11 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+get('/', function() { return Redirect::to('stores'); });
+
+get('stores', 'HomeController@index');
+post('stores', 'HomeController@validate');
+get('oauth', 'HomeController@oauth');
+
+get('stores/{id}/webhooks', array('as' => 'webhooks', 'uses' => 'HomeController@webhooks'));
+post('stores/{id}/webhooks', 'HomeController@createHook');
